@@ -1,0 +1,30 @@
+AI RESUME ANALYZER — DETAILED REPORT
+==================================================
+
+Overall ATS Score: 75.1 / 100
+Strength Level:    Strong
+
+Score Breakdown
+--------------------------------------------------
+Skill Match (40):       40.0
+Semantic Similarity(20):2.6
+Keyword Optimization(15):15.0
+Experience Match (15):  7.5
+Resume Quality (10):    10.0
+
+Skills
+--------------------------------------------------
+Resume Skills (11): Adaptability, C++, Communication, JavaScript, Leadership, MongoDB, Node.js, Problem Solving, Python, SQL, Teamwork
+JD Skills (1): Python
+Matched: Python
+Missing: —
+Critical Missing: —
+
+Experience
+--------------------------------------------------
+Resume years detected: 0.0
+JD years required:     0.0
+
+Recommendations
+--------------------------------------------------
+- 📝 Resume context differs from the JD. Mirror the JD's language and responsibilities.
