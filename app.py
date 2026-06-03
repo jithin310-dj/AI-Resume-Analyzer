@@ -5,8 +5,9 @@ Run locally:
     cd Downloads
     python -m streamlit run "app (1).py"
 """
-from PyPDF2 import PdfReader
 from __future__ import annotations
+from PyPDF2 import PdfReader
+
 
 import io
 import re
