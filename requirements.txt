@@ -1,7 +1,7 @@
 streamlit
-PyPDF2
-python-docx
 pandas
+numpy
 altair
 scikit-learn
-spacy
+PyPDF2
+python-docx
