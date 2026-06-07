@@ -27,16 +27,6 @@ from sklearn.metrics.pairwise import cosine_similarity
 # NLP setup (lazy + cached)
 # ---------------------------------------------------------------------------
 
-@st.cache_resource(show_spinner=False)
-def load_spacy():
-    import spacy
-    try:
-        return spacy.load("en_core_web_sm", disable=["ner", "parser"])
-    except OSError:
-        from spacy.cli import download
-        download("en_core_web_sm")
-        return spacy.load("en_core_web_sm", disable=["ner", "parser"])
-
 
 # ---------------------------------------------------------------------------
 # Skills database
@@ -157,14 +147,8 @@ def clean_text(text: str) -> str:
 
 
 @st.cache_data(show_spinner=False)
-def tokenize(text: str) -> List[str]:
-    nlp = load_spacy()
-    doc = nlp(text)
-    return [
-        t.lemma_.lower()
-        for t in doc
-        if not t.is_stop and not t.is_punct and not t.is_space and len(t.text) > 1
-    ]
+def tokenize(text: str):
+    return re.findall(r"\b[a-zA-Z]+\b", text.lower())
 
 
 # ---------------------------------------------------------------------------
